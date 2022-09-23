@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="button-and-form-container">
+    <div class="title-and-button">
+      <div class="title">My Reading List</div>
+      <button data-input-target="#input-container" type="button" class="new-button">New Book</button>
+    </div>
+    <div class="input-container" id="input-container">
+      <form id="input-form">
+        <div class="title-container">
+          <div class="title-input">
+            <label for="book-title">Book Title</label>
+            <input type="text" name="book-title" id="book-title">
+          </div>
+        </div>
+        <div class="author-container">
+          <div class="author-input">
+            <label for="author-name">Author</label>
+            <input type="text" name="author-name" id="author-name">
+          </div>
+        </div>
+        <div class="pages-container">
+          <div class="pages-input">
+            <label for="pages-read">Pages Read</label>
+            <input type="number" min="0" name="pages-read" id="pages-read">
+          </div>
+        </div>
+        <button onclick="addBookToLibrary()" data-add-button type="button" id="add-button">Add</button>
+      </form>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <div id="header-box">
+    <div id="box">
+      <table class="header-table">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read Status</th>
+          <th></th>
+        </tr>
+      </table>
+      <table></table>
+    </div>
+    </div>
+  </div>
+  <script src="library.js" type="text/javascript"></script>
+</body>
+</html>
