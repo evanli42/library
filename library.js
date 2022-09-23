@@ -124,10 +124,10 @@ function selectButton() {
       console.log('test');
       if (e.textContent === 'Completed') {
         e.textContent = 'In Progress';
-        e.style.background = '#06b6d4';
+        e.style.background = '#ccfbf1';
       } else {
         e.textContent = 'Completed';
-        e.style.background = '#f0fdfa';
+        e.style.background = '#34d399';
       }
     });
   });

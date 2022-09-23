@@ -140,12 +140,12 @@ table {
 .toggle-button {
   border-radius: 1rem;
   padding: 1rem;
-  background-color: #ecfeff;
+  background-color: #34d399;
   font-weight: bold;
 }
 
 .toggle-button:hover {
-  background-color: #06b6d4;
+  background-color: #ccfbf1;
 }
 
 .delete {
